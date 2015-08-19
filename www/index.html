@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes.-->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+
+	<!-- Dependencies -->
+	<script src="./bower_components/angular/angular.min.js"></script>
+	<script src="./bower_components/angular-cookies/angular-cookies.js"></script>
+	<script src="./bower_components/angular-animate/angular-animate.js"></script>
+	<script src="./bower_components/angular-route/angular-route.js"></script>
+	<script src="./bower_components/angular-safeapply/safe-apply.js"></script>
+	<script src="./bower_components/ngCordova/dist/ng-cordova.js"></script>
+
+    <!-- Js files -->
+    <script src="./app/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="./app/components/login/loginController.js"></script>
+    <script src="./app/components/home/homeController.js"></script>
+    <script src="./app/components/picture/pictureController.js"></script>
+    <script src="./app/components/nextStep/nextStepController.js"></script>
+
+
+    <!-- Directives -->
+    <script src="./app/shared/directives/loginScreenDirective.js"></script>
+    
+    <!-- Services -->  
+    <script src="./app/shared/services/loginService.js"></script>  
+    <script src="./app/shared/services/pictureService.js"></script>
+
+	<title>Generateur de Butin</title>
+</head>
+
+
+<body id="deviceready">
+	
+	<div class="container" ng-view>
+	</div>
+
+	<script type="text/javascript" src="cordova.js"></script>
+
+</body>
+</html>

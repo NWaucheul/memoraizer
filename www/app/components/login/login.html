@@ -1,0 +1,12 @@
+<div class="welcomeScreen" ng-show="showLoginScreen == 0">
+	<div class="welcomeContainer">
+		<h1 class="welcome">Mem<span>0</span>raiser</h1>
+	</div>
+	<div>
+		<p>Turn your events into a sensorial experience</p>
+	</div>
+	<div>
+		<p ng-click="showLoginScreen = 1">START</p>
+	</div>
+</div>
+<login-screen ng-show="showLoginScreen == 1"></login-screen>

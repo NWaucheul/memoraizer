@@ -1,0 +1,44 @@
+<div class="loginScreen">
+	<div class="welcomeContainer">
+		<h1 class="welcome">Mem<span>0</span>raiser</h1>
+	</div>
+	<div ng-hide="showCode == 1">
+		<p>Enter your phone n° to</p></br>
+		<p>start MemoRaizing</p>
+	</div>
+	<div ng-show="showCode == 1">
+		<p>Enter code</p>
+	</div>
+	<div class="phoneNumberDisplay" ng-hide="showCode ==1">
+		<span class="internationalCode">+{{internationalCode}}</span><span class="phoneNumber" ng-model="phoneNumber">{{phoneNumber}}</span>
+	</div>
+	<div class="codeDisplay" ng-show="showCode == 1">
+		<span>{{firstDigit}}</span>
+		<span>{{secondDigit}}</span>
+		<span>{{thirdDigit}}</span>
+		<span>{{fourthDigit}}</span>
+		<span ng-show="codeError == 1">X</span>
+	</div>
+	<div class="phoneKeyboard">
+		<div class="row">
+			<button class="phoneButton" ng-click="addToPhoneNumberOrCode('1')">1</button>
+			<button class="phoneButton" ng-click="addToPhoneNumberOrCode('2')">2</button>
+			<button class="phoneButton" ng-click="addToPhoneNumberOrCode('3')">3</button>
+		</div>
+		<div class="row">
+			<button class="phoneButton" ng-click="addToPhoneNumberOrCode('4')">4</button>
+			<button class="phoneButton" ng-click="addToPhoneNumberOrCode('5')">5</button>
+			<button class="phoneButton" ng-click="addToPhoneNumberOrCode('6')">6</button>
+		</div>
+		<div class="row">
+			<button class="phoneButton" ng-click="addToPhoneNumberOrCode('7')">7</button>
+			<button class="phoneButton" ng-click="addToPhoneNumberOrCode('8')">8</button>
+			<button class="phoneButton" ng-click="addToPhoneNumberOrCode('9')">9</button>
+		</div>
+		<div class="row">
+			<button class="phoneButton" ng-click="removeToPhoneNumberOrCode()">Back</button>
+			<button class="phoneButton" ng-click="addToPhoneNumberOrCode('0')">0</button>
+			<button class="phoneButton" ng-click="sendSMSOrLog()">{{sendOrLog}}</button>
+		</div>
+	</div>
+</div>

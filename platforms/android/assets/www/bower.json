@@ -1,0 +1,23 @@
+{
+  "name": "www",
+  "version": "0.0.0",
+  "authors": [
+    "Naiyo78 <nwaucheul@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.4.3",
+    "angular": "1.4.3",
+    "ngCordova": "~0.1.17-alpha",
+    "angular-animate": "~1.4.3",
+    "angular-safeapply": "~1.0.4",
+    "angular-cookies": "~1.4.3"
+  }
+}
