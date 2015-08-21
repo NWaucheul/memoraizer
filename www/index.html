@@ -11,6 +11,9 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
 
+	<!-- Config -->
+	<script src="./config.js"></script>
+
 	<!-- Dependencies -->
 	<script src="./bower_components/angular/angular.min.js"></script>
 	<script src="./bower_components/angular-cookies/angular-cookies.js"></script>
@@ -26,17 +29,20 @@
     <script src="./app/components/login/loginController.js"></script>
     <script src="./app/components/home/homeController.js"></script>
     <script src="./app/components/picture/pictureController.js"></script>
-    <script src="./app/components/nextStep/nextStepController.js"></script>
+    <script src="./app/components/memoInfo/memoInfoController.js"></script>
 
 
     <!-- Directives -->
     <script src="./app/shared/directives/loginScreenDirective.js"></script>
     
     <!-- Services -->  
+    <script src="./app/shared/services/memoraizerService.js"></script>
     <script src="./app/shared/services/loginService.js"></script>  
     <script src="./app/shared/services/pictureService.js"></script>
+    <script src="./app/shared/services/alertService.js"></script>
 
-	<title>Generateur de Butin</title>
+
+	<title>Memoraizer</title>
 </head>
 
 
@@ -45,7 +51,7 @@
 	<div class="container" ng-view>
 	</div>
 
-	<script type="text/javascript" src="cordova.js"></script>
+	<!--cript type="text/javascript" src="cordova.js"></script-->
 
 </body>
 </html>

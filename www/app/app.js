@@ -18,9 +18,9 @@ app.config(function($routeProvider){
 			templateUrl: 'app/components/picture/picture.html',
 			controller: 'pictureController'
 		})
-		.when('/nextStep', {
-			templateUrl: 'app/components/nextStep/nextStep.html',
-			controller: 'nextStepController'
+		.when('/memoinfo', {
+			templateUrl: 'app/components/memoInfo/memoInfo.html',
+			controller: 'memoInfoController'
 		})
 		.otherwise({redirectTo: '/login'});
 });

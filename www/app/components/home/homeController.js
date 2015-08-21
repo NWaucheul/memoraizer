@@ -1,7 +1,8 @@
-app.controller('homeController', ['$scope', '$location', 'Login', function($scope, $location, Login){
+app.controller('homeController', ['$scope', '$location', 'Login', 'Memoraizer', function($scope, $location, Login, Memoraizer){
 
-	$scope.goToPage = function(pageName){
-		$location.path('/'+pageName);
+	$scope.goToPage = function(type){
+		Memoraizer.createMemoraizer();
+		$location.path('/'+type);
 	}
 	
 	$scope.resetLogin = function(){
